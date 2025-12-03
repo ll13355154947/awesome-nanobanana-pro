@@ -9,7 +9,7 @@ This repository focuses on **high-fidelity image prompts** sourced from X (Twitt
 
 ### Try the prompts with actual Nano Banana Pro here 👉 https://nanobananaproprompts.com
 
-Consider subscribing to [this free newsletter](https://zerolu.substack.com/p/hello-there) if you want more high quality content like this.
+Consider subscribing to [this free newsletter](https://zerolu.substack.com/p/hello-there) or follow me on [X](https://x.com/zerolu_eth) if you want more high quality content like this.
 
 ### Sponsor One: [thesorawatermarkremover.com](https://thesorawatermarkremover.com)
 
@@ -18,7 +18,7 @@ Consider subscribing to [this free newsletter](https://zerolu.substack.com/p/hel
 [<img width="600" height="265" alt="image" src="https://github.com/user-attachments/assets/b087445c-d3ad-4152-8e28-33a5ca49d4b5" />](https://thesorawatermarkremover.com)
 
 
-### Sponsor Two: Polymeric Cloud Limited
+### Sponsor Two: [Polymeric Cloud Limited](https://www.polymericcloud.com/)
 <table>
 <tr>
 <td width="60%" valign="top">

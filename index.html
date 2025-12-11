@@ -1,23 +1,230 @@
+
 <!DOCTYPE html>
-<html>
+<html lang="zh-CN">
 <head>
-  <meta charset="UTF-8">
-  <title>Awesome Nano Banana Pro</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nano Banana Pro Gallery</title>
+    <style>
+        body {
+            background-color: #1a1a1a;
+            color: #e0e0e0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 40px;
+            font-weight: 300;
+            letter-spacing: 2px;
+        }
+        /* 瀑布流核心布局 */
+        .gallery {
+            column-count: 5; /* 默认5列 */
+            column-gap: 20px;
+        }
+        .card {
+            break-inside: avoid; /* 防止卡片被断开 */
+            background: #2d2d2d;
+            border-radius: 12px;
+            margin-bottom: 20px;
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: 1px solid #3d3d3d;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+            border-color: #555;
+        }
+        .card img {
+            width: 100%;
+            display: block;
+            border-bottom: 1px solid #333;
+        }
+        .card-content {
+            padding: 15px;
+        }
+        .prompt-text {
+            font-size: 13px;
+            line-height: 1.5;
+            color: #b0b0b0;
+            display: -webkit-box;
+            -webkit-line-clamp: 4; /* 最多显示4行文字 */
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+        .copy-btn {
+            display: block;
+            width: 100%;
+            padding: 8px 0;
+            margin-top: 10px;
+            background: #4a4a4a;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 12px;
+            transition: background 0.2s;
+        }
+        .copy-btn:hover { background: #007bff; }
+        
+        /* 响应式调整 */
+        @media (max-width: 1200px) { .gallery { column-count: 4; } }
+        @media (max-width: 900px) { .gallery { column-count: 3; } }
+        @media (max-width: 600px) { .gallery { column-count: 2; } }
+    </style>
 </head>
 <body>
-  <div id="app"></div>
-  <script>
-    window.$docsify = {
-      name: 'Nano Banana Pro Gallery',
-      repo: 'https://github.com/ll13355154947/awesome-nanobanana-pro',
-      loadSidebar: false,
-      subMaxLevel: 3,
-      auto2top: true
-    }
-  </script>
-  <script src="//cdn.jsdelivr.net/npm/docsify@4/lib/docsify.min.js"></script>
-  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/zoom-image.min.js"></script>
+    <h1>🍌 Awesome Nano Banana Pro Gallery</h1>
+    <div class="gallery">
+        
+        <div class="card">
+            <a href="https://img.shields.io/badge/Enterprise%20Access-Available-blue" target="_blank"><img src="https://img.shields.io/badge/Enterprise%20Access-Available-blue" loading="lazy" alt="Image"></a>
+            <div class="card-content">
+                <div class="prompt-text" title="Badge">Badge</div>
+                <button class="copy-btn" onclick="navigator.clipboard.writeText(this.previousElementSibling.getAttribute('title'));alert('提示词已复制！')">复制提示词</button>
+            </div>
+        </div>
+        
+        <div class="card">
+            <a href="https://github.com/user-attachments/assets/e41db56f-d928-400c-b21b-f8a0d53ba91b" target="_blank"><img src="https://github.com/user-attachments/assets/e41db56f-d928-400c-b21b-f8a0d53ba91b" loading="lazy" alt="Image"></a>
+            <div class="card-content">
+                <div class="prompt-text" title="Original">Original</div>
+                <button class="copy-btn" onclick="navigator.clipboard.writeText(this.previousElementSibling.getAttribute('title'));alert('提示词已复制！')">复制提示词</button>
+            </div>
+        </div>
+        
+        <div class="card">
+            <a href="https://github.com/user-attachments/assets/793ad242-7867-4709-bdc6-55021f5eb78f" target="_blank"><img src="https://github.com/user-attachments/assets/793ad242-7867-4709-bdc6-55021f5eb78f" loading="lazy" alt="Image"></a>
+            <div class="card-content">
+                <div class="prompt-text" title="Generated">Generated</div>
+                <button class="copy-btn" onclick="navigator.clipboard.writeText(this.previousElementSibling.getAttribute('title'));alert('提示词已复制！')">复制提示词</button>
+            </div>
+        </div>
+        
+        <div class="card">
+            <a href="https://github.com/user-attachments/assets/e41db56f-d928-400c-b21b-f8a0d53ba91b" target="_blank"><img src="https://github.com/user-attachments/assets/e41db56f-d928-400c-b21b-f8a0d53ba91b" loading="lazy" alt="Image"></a>
+            <div class="card-content">
+                <div class="prompt-text" title="Original">Original</div>
+                <button class="copy-btn" onclick="navigator.clipboard.writeText(this.previousElementSibling.getAttribute('title'));alert('提示词已复制！')">复制提示词</button>
+            </div>
+        </div>
+        
+        <div class="card">
+            <a href="https://github.com/user-attachments/assets/243d1b11-9ef0-4d4f-b308-97d67b5d3bc3" target="_blank"><img src="https://github.com/user-attachments/assets/243d1b11-9ef0-4d4f-b308-97d67b5d3bc3" loading="lazy" alt="Image"></a>
+            <div class="card-content">
+                <div class="prompt-text" title="Generated">Generated</div>
+                <button class="copy-btn" onclick="navigator.clipboard.writeText(this.previousElementSibling.getAttribute('title'));alert('提示词已复制！')">复制提示词</button>
+            </div>
+        </div>
+        
+        <div class="card">
+            <a href="https://github.com/user-attachments/assets/4ae658d3-4fdd-44c5-a1ab-9d44d04dd792" target="_blank"><img src="https://github.com/user-attachments/assets/4ae658d3-4fdd-44c5-a1ab-9d44d04dd792" loading="lazy" alt="Image"></a>
+            <div class="card-content">
+                <div class="prompt-text" title="Garment">Garment</div>
+                <button class="copy-btn" onclick="navigator.clipboard.writeText(this.previousElementSibling.getAttribute('title'));alert('提示词已复制！')">复制提示词</button>
+            </div>
+        </div>
+        
+        <div class="card">
+            <a href="https://github.com/user-attachments/assets/8710a21d-9fc3-4d9a-bcfe-cd5fb6999bfb" target="_blank"><img src="https://github.com/user-attachments/assets/8710a21d-9fc3-4d9a-bcfe-cd5fb6999bfb" loading="lazy" alt="Image"></a>
+            <div class="card-content">
+                <div class="prompt-text" title="Model">Model</div>
+                <button class="copy-btn" onclick="navigator.clipboard.writeText(this.previousElementSibling.getAttribute('title'));alert('提示词已复制！')">复制提示词</button>
+            </div>
+        </div>
+        
+        <div class="card">
+            <a href="https://github.com/user-attachments/assets/81eaafb6-901b-424d-a197-dc1bc0bfc5bf" target="_blank"><img src="https://github.com/user-attachments/assets/81eaafb6-901b-424d-a197-dc1bc0bfc5bf" loading="lazy" alt="Image"></a>
+            <div class="card-content">
+                <div class="prompt-text" title="Result">Result</div>
+                <button class="copy-btn" onclick="navigator.clipboard.writeText(this.previousElementSibling.getAttribute('title'));alert('提示词已复制！')">复制提示词</button>
+            </div>
+        </div>
+        
+        <div class="card">
+            <a href="https://github.com/user-attachments/assets/5f5e4629-3ebe-45c6-8b90-bd4c009d2585" target="_blank"><img src="https://github.com/user-attachments/assets/5f5e4629-3ebe-45c6-8b90-bd4c009d2585" loading="lazy" alt="Image"></a>
+            <div class="card-content">
+                <div class="prompt-text" title="Floor Plan">Floor Plan</div>
+                <button class="copy-btn" onclick="navigator.clipboard.writeText(this.previousElementSibling.getAttribute('title'));alert('提示词已复制！')">复制提示词</button>
+            </div>
+        </div>
+        
+        <div class="card">
+            <a href="https://github.com/user-attachments/assets/cf6d0304-60b6-4262-b4a1-08571f2c491e" target="_blank"><img src="https://github.com/user-attachments/assets/cf6d0304-60b6-4262-b4a1-08571f2c491e" loading="lazy" alt="Image"></a>
+            <div class="card-content">
+                <div class="prompt-text" title="Design Board">Design Board</div>
+                <button class="copy-btn" onclick="navigator.clipboard.writeText(this.previousElementSibling.getAttribute('title'));alert('提示词已复制！')">复制提示词</button>
+            </div>
+        </div>
+        
+        <div class="card">
+            <a href="https://github.com/user-attachments/assets/f5c790f9-f0e2-4c4d-b274-bf4bcd1c4764" target="_blank"><img src="https://github.com/user-attachments/assets/f5c790f9-f0e2-4c4d-b274-bf4bcd1c4764" loading="lazy" alt="Image"></a>
+            <div class="card-content">
+                <div class="prompt-text" title="Source">Source</div>
+                <button class="copy-btn" onclick="navigator.clipboard.writeText(this.previousElementSibling.getAttribute('title'));alert('提示词已复制！')">复制提示词</button>
+            </div>
+        </div>
+        
+        <div class="card">
+            <a href="https://github.com/user-attachments/assets/21b0d56c-a2a5-463a-9a0e-84100e9d08d8" target="_blank"><img src="https://github.com/user-attachments/assets/21b0d56c-a2a5-463a-9a0e-84100e9d08d8" loading="lazy" alt="Image"></a>
+            <div class="card-content">
+                <div class="prompt-text" title="Thumbnail">Thumbnail</div>
+                <button class="copy-btn" onclick="navigator.clipboard.writeText(this.previousElementSibling.getAttribute('title'));alert('提示词已复制！')">复制提示词</button>
+            </div>
+        </div>
+        
+        <div class="card">
+            <a href="https://github.com/user-attachments/assets/9920f5ad-c6bb-4375-9255-a80f8568b0a9" target="_blank"><img src="https://github.com/user-attachments/assets/9920f5ad-c6bb-4375-9255-a80f8568b0a9" loading="lazy" alt="Image"></a>
+            <div class="card-content">
+                <div class="prompt-text" title="Original">Original</div>
+                <button class="copy-btn" onclick="navigator.clipboard.writeText(this.previousElementSibling.getAttribute('title'));alert('提示词已复制！')">复制提示词</button>
+            </div>
+        </div>
+        
+        <div class="card">
+            <a href="https://github.com/user-attachments/assets/46c82371-4f9d-431c-9a11-65f51862a792" target="_blank"><img src="https://github.com/user-attachments/assets/46c82371-4f9d-431c-9a11-65f51862a792" loading="lazy" alt="Image"></a>
+            <div class="card-content">
+                <div class="prompt-text" title="Translated">Translated</div>
+                <button class="copy-btn" onclick="navigator.clipboard.writeText(this.previousElementSibling.getAttribute('title'));alert('提示词已复制！')">复制提示词</button>
+            </div>
+        </div>
+        
+        <div class="card">
+            <a href="https://github.com/user-attachments/assets/c6c03353-f00a-4042-ba74-726b46c67541" target="_blank"><img src="https://github.com/user-attachments/assets/c6c03353-f00a-4042-ba74-726b46c67541" loading="lazy" alt="Image"></a>
+            <div class="card-content">
+                <div class="prompt-text" title="Original">Original</div>
+                <button class="copy-btn" onclick="navigator.clipboard.writeText(this.previousElementSibling.getAttribute('title'));alert('提示词已复制！')">复制提示词</button>
+            </div>
+        </div>
+        
+        <div class="card">
+            <a href="https://github.com/user-attachments/assets/da445a7e-cf15-44be-ad18-d66b8fb78ae8" target="_blank"><img src="https://github.com/user-attachments/assets/da445a7e-cf15-44be-ad18-d66b8fb78ae8" loading="lazy" alt="Image"></a>
+            <div class="card-content">
+                <div class="prompt-text" title="Blind Box">Blind Box</div>
+                <button class="copy-btn" onclick="navigator.clipboard.writeText(this.previousElementSibling.getAttribute('title'));alert('提示词已复制！')">复制提示词</button>
+            </div>
+        </div>
+        
+        <div class="card">
+            <a href="https://github.com/user-attachments/assets/ed677fde-b407-4798-895d-e89c8534bd32" target="_blank"><img src="https://github.com/user-attachments/assets/ed677fde-b407-4798-895d-e89c8534bd32" loading="lazy" alt="Image"></a>
+            <div class="card-content">
+                <div class="prompt-text" title="Pet">Pet</div>
+                <button class="copy-btn" onclick="navigator.clipboard.writeText(this.previousElementSibling.getAttribute('title'));alert('提示词已复制！')">复制提示词</button>
+            </div>
+        </div>
+        
+        <div class="card">
+            <a href="https://github.com/user-attachments/assets/9fc5866a-e62e-43b9-af83-8fa5f6421d33" target="_blank"><img src="https://github.com/user-attachments/assets/9fc5866a-e62e-43b9-af83-8fa5f6421d33" loading="lazy" alt="Image"></a>
+            <div class="card-content">
+                <div class="prompt-text" title="Meme">Meme</div>
+                <button class="copy-btn" onclick="navigator.clipboard.writeText(this.previousElementSibling.getAttribute('title'));alert('提示词已复制！')">复制提示词</button>
+            </div>
+        </div>
+        
+        </div>
 </body>
 </html>
+    
